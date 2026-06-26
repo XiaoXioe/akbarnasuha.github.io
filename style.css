@@ -734,9 +734,10 @@ header.scrolled .nav-container {
   color: #f3f4f6;
 }
 
-.contact-btn.linkedin:hover {
-  border-color: #0077b5;
-  color: #0077b5;
+.contact-btn.whatsapp:hover {
+  border-color: #25d366;
+  color: #25d366;
+  background: rgba(37, 211, 102, 0.05);
 }
 
 /* Footer Section */
