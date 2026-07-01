@@ -119,12 +119,26 @@
 
         <div class="hero-visual reveal">
           <div class="glow-backdrop"></div>
-          <div class="hero-image-wrapper">
-            <img
-              src="assets/hero.jpg"
-              alt="Akbar Nasuha - IT Support & NixOS Specialist"
-              class="hero-image"
-            />
+          <div class="terminal-mockup">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button expand"></span>
+              </div>
+              <div class="terminal-title">akbar@nixos:~</div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="prompt">[nix-shell:~]$</span> nixos-rebuild switch --flake .#desktop</div>
+              <div class="terminal-output">building system configuration...</div>
+              <div class="terminal-output">updating home-manager profiles...</div>
+              <div class="terminal-output success">✓ switched to nixos-desktop successfully!</div>
+              <div class="terminal-line"><span class="prompt">[nix-shell:~]$</span> nix-mcp --status</div>
+              <div class="terminal-output info">● nix-mcp.service - Nix MCP AI Agent Server</div>
+              <div class="terminal-output indent">Active: active (running) since Wed 18:00:00; 5h ago</div>
+              <div class="terminal-output indent">Detail: Connected to CLI Profile Manager</div>
+              <div class="terminal-line"><span class="prompt">[nix-shell:~]$</span> <span class="cursor"></span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -439,12 +453,10 @@
 
         <div class="contact-container reveal">
           <h3 class="contact-title">
-            Tertarik Membangun Sistem Berperforma Tinggi Bersama?
+            Tertarik Berkolaborasi untuk Solusi Infrastruktur TI?
           </h3>
           <p class="contact-desc">
-            Silakan hubungi saya melalui jalur profesional di bawah ini untuk
-            kolaborasi proyek, konsultasi arsitektur cloud, atau optimasi
-            kecerdasan buatan.
+            Silakan hubungi saya melalui jalur profesional di bawah ini untuk kolaborasi proyek, administrasi sistem NixOS, manajemen jaringan lokal, atau otomatisasi dukungan TI.
           </p>
 
           <div class="contact-methods">
@@ -465,7 +477,7 @@
               <i class="fab fa-github"></i> GitHub
             </a>
             <a
-              href="https://wa.me/6289510801630"
+              href="https://wa.me/6289510801630?text=Halo%20Akbar%20Nasuha,%20saya%20tertarik%20dengan%20profil%20IT%20Support%20%26%20NixOS%20Anda%20dan%20ingin%20berdiskusi%20lebih%20lanjut."
               target="_blank"
               rel="noopener"
               class="contact-btn whatsapp"
