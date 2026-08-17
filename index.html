@@ -1,526 +1,692 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Akbar Nasuha | Junior IT Support & NixOS Declarative Specialist
-    </title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akbar Nasuha | Junior IT Support & Declarative Infrastructure Specialist</title>
 
-    <!-- Primary Meta Tags -->
-    <meta
-      name="title"
-      content="Akbar Nasuha | Junior IT Support & NixOS Declarative Specialist"
-    />
-    <meta
-      name="description"
-      content="Portfolio Akbar Nasuha, Junior IT Support dengan spesialisasi sistem operasi deklaratif (NixOS), manajemen jaringan lokal, otomatisasi AI Agents, dan administrasi sistem."
-    />
-    <meta
-      name="keywords"
-      content="Akbar Nasuha, IT Support, Junior IT Support, NixOS, Nix Flakes, Home Manager, Jaringan Komputer, OpenWrt, VPN, Cloudflare, AI Agents, Python, rclone"
-    />
-    <meta name="author" content="Akbar Nasuha" />
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Akbar Nasuha | Junior IT Support & Declarative Infrastructure Specialist" />
+  <meta name="description" content="Portofolio Akbar Nasuha - Junior IT Support & Systems Operator dengan spesialisasi sistem deklaratif NixOS, otomatisasi Python, AI Model Context Protocol (MCP), dan manajemen jaringan lokal." />
+  <meta name="keywords" content="Akbar Nasuha, IT Support, NixOS, Nix Flakes, Home Manager, SOPS-nix, Impermanence, Linux, Python, AI Agents, MCP, Model Context Protocol, OpenWrt, Cloudflare, rclone, Hardware Diagnostics" />
+  <meta name="author" content="Akbar Nasuha" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://akbarnasuha.my.id/" />
-    <meta
-      property="og:title"
-      content="Akbar Nasuha | Junior IT Support & NixOS Declarative Specialist"
-    />
-    <meta
-      property="og:description"
-      content="Portfolio Akbar Nasuha, Junior IT Support dengan keahlian unik di bidang NixOS, Jaringan, dan Otomatisasi AI."
-    />
-    <meta property="og:image" content="assets/hero.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://akbarnasuha.my.id/" />
+  <meta property="og:title" content="Akbar Nasuha | Junior IT Support & Declarative Infrastructure Specialist" />
+  <meta property="og:description" content="Portofolio profesional Akbar Nasuha: Sistem Operasi Deklaratif NixOS, Otomatisasi Python, AI Tooling (MCP), dan Manajemen Jaringan." />
+  <meta property="og:image" content="assets/hero.jpg" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://akbarnasuha.my.id/" />
-    <meta
-      property="twitter:title"
-      content="Akbar Nasuha | Junior IT Support & NixOS Declarative Specialist"
-    />
-    <meta
-      property="twitter:description"
-      content="Portfolio Akbar Nasuha, Junior IT Support dengan keahlian unik di bidang NixOS, Jaringan, dan Otomatisasi AI."
-    />
-    <meta property="twitter:image" content="assets/hero.jpg" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://akbarnasuha.my.id/" />
+  <meta property="twitter:title" content="Akbar Nasuha | Junior IT Support & Declarative Infrastructure Specialist" />
+  <meta property="twitter:description" content="Portofolio profesional Akbar Nasuha: Sistem Operasi Deklaratif NixOS, Otomatisasi Python, AI Tooling (MCP), dan Manajemen Jaringan." />
+  <meta property="twitter:image" content="assets/hero.jpg" />
 
-    <!-- CSS Link & FontAwesome -->
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- CSS & FontAwesome -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
-    />
-  </head>
-  <body>
-    <!-- Header / Nav -->
-    <header>
-      <div class="container nav-container">
-        <a href="#home" class="logo" id="nav-logo">
-          Akbar Nasuha<span class="logo-dot"></span>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" id="nav-logo">
+        <span class="nav-brand-icon"></span>
+        <span>akbar.nasuha<span class="dir">/~</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Buka Navigasi" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#capabilities" class="nav-link">Kapabilitas</a></li>
+        <li><a href="#repositories" class="nav-link">Repositori</a></li>
+        <li><a href="#architecture" class="nav-link">Arsitektur</a></li>
+        <li><a href="cv.html" target="_blank" class="nav-link">CV</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/XiaoXioe" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" id="header-github">
+          <i class="fab fa-github"></i> <span>GitHub</span>
         </a>
-
-        <button
-          class="nav-toggle"
-          aria-label="Toggle navigation menu"
-          id="menu-btn"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Beranda</a></li>
-          <li><a href="#about" class="nav-link">Tentang</a></li>
-          <li><a href="#skills" class="nav-link">Keahlian</a></li>
-          <li><a href="#projects" class="nav-link">Portofolio</a></li>
-          <li><a href="cv.html" target="_blank" class="nav-link">CV</a></li>
-          <li><a href="#contact" class="nav-link">Kontak</a></li>
-        </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="badge">
-            <span class="badge-dot"></span>
-            Tersedia untuk Kolaborasi
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>NixOS Flakes • Python Automation • AI Tooling (MCP)</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="title-lead">Akbar Nasuha</span>
+          Junior IT Support & Systems Operator
+        </h1>
+        
+        <p class="hero-description">
+          Mengelola dan membangun infrastruktur TI dengan pendekatan modern yang terstruktur. Berfokus pada sistem operasi deklaratif (NixOS), diagnosa perangkat keras, administrasi jaringan lokal, serta otomatisasi alur kerja menggunakan skrip Python dan asisten AI (Model Context Protocol).
+        </p>
+
+        <div class="hero-actions">
+          <a href="#repositories" class="btn btn-primary" id="hero-btn-repos">
+            <i class="fas fa-code-branch"></i> Jelajahi Repositori
+          </a>
+          <a href="cv.html" target="_blank" class="btn btn-secondary" id="hero-btn-cv">
+            <i class="fas fa-file-lines"></i> Lihat CV Lengkap
+          </a>
+          <a href="#contact" class="btn btn-outline" id="hero-btn-contact">
+            <i class="fas fa-envelope"></i> Hubungi Saya
+          </a>
+        </div>
+
+        <!-- Quick Architecture Cards -->
+        <div class="hero-highlights">
+          <div class="hero-h-card">
+            <div class="h-card-icon"><i class="fas fa-snowflake"></i></div>
+            <div class="h-card-content">
+              <span class="h-card-label">Declarative OS</span>
+              <span class="h-card-val">NixOS Flakes + Home Manager</span>
+              <span class="h-card-sub">Btrfs Impermanence (Ephemeral Root)</span>
+            </div>
           </div>
-          <h1 class="hero-title">Halo, saya <span>Akbar Nasuha</span></h1>
-          <p class="hero-subtitle">
-            Junior IT Support & AI-Assisted Systems Operator
+
+          <div class="hero-h-card">
+            <div class="h-card-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="h-card-content">
+              <span class="h-card-label">Security & Ops</span>
+              <span class="h-card-val">SOPS-Nix & Age Encryption</span>
+              <span class="h-card-sub">WireGuard Mesh VPN & NextDNS</span>
+            </div>
+          </div>
+
+          <div class="hero-h-card">
+            <div class="h-card-icon"><i class="fas fa-robot"></i></div>
+            <div class="h-card-content">
+              <span class="h-card-label">AI & Automation</span>
+              <span class="h-card-val">FastMCP Model Context Protocol</span>
+              <span class="h-card-sub">Python AsyncIO & Shell Tooling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Philosophy Section -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-narrative reveal">
+          <div class="section-tag">Filosofi & Profil</div>
+          <h2 class="section-title">Infrastruktur yang Reproduktif, Operasional yang Presisi</h2>
+          
+          <p>
+            Saya adalah seorang <strong>Junior IT Support & Systems Operator</strong> dengan latar belakang pendidikan Teknik Komputer dan Jaringan. Bagi saya, keandalan sistem bukan dicapai melalui konfigurasi ad-hoc, melainkan melalui <strong>arsitektur deklaratif</strong> dan pencatatan yang sistematis.
           </p>
-          <p class="hero-description">
-            Saya mengelola dan memelihara infrastruktur TI dengan pendekatan modern. Spesialis dalam merakit dan mendiagnosa perangkat keras, administrasi sistem operasi deklaratif (NixOS), manajemen jaringan lokal, serta otomatisasi tugas menggunakan skrip Python dan asisten AI kustom.
+          <p>
+            Dengan spesialisasi pada <strong>NixOS Flakes</strong> dan <strong>Home Manager</strong>, seluruh workstation dan server yang saya kelola memiliki status 100% dapat direproduksi (*reproducible*). Jika terjadi kegagalan hardware, sistem baru dapat dibangun kembali dengan kondisi identik dalam hitungan menit.
           </p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary" id="hero-cta-contact"
-              >Hubungi Saya <i class="fas fa-arrow-right"></i
-            ></a>
-            <a href="#projects" class="btn btn-secondary" id="hero-cta-projects"
-              >Lihat Proyek</a
-            >
-            <a href="cv.html" target="_blank" class="btn btn-secondary" id="hero-cta-cv"
-              >Lihat CV</a
-            >
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="glow-backdrop"></div>
-          <div class="terminal-mockup">
-            <div class="terminal-header">
-              <div class="terminal-buttons">
-                <span class="terminal-button close"></span>
-                <span class="terminal-button minimize"></span>
-                <span class="terminal-button expand"></span>
-              </div>
-              <div class="terminal-title">akbar@nixos:~</div>
-            </div>
-            <div class="terminal-body">
-              <div class="terminal-line"><span class="prompt">[nix-shell:~]$</span> nixos-rebuild switch --flake .#desktop</div>
-              <div class="terminal-output">building system configuration...</div>
-              <div class="terminal-output">updating home-manager profiles...</div>
-              <div class="terminal-output success">✓ switched to nixos-desktop successfully!</div>
-              <div class="terminal-line"><span class="prompt">[nix-shell:~]$</span> nix-mcp --status</div>
-              <div class="terminal-output info">● nix-mcp.service - Nix MCP AI Agent Server</div>
-              <div class="terminal-output indent">Active: active (running) since Wed 18:00:00; 5h ago</div>
-              <div class="terminal-output indent">Detail: Connected to CLI Profile Manager</div>
-              <div class="terminal-line"><span class="prompt">[nix-shell:~]$</span> <span class="cursor"></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section" id="about" style="background: var(--bg-secondary)">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Mengenal Saya</p>
-          <h2 class="section-title">Tentang Saya</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              Saya adalah seorang
-              <span class="highlight"
-                >Junior IT Support & Systems Operator</span
-              >
-              dengan latar belakang kuat di bidang Teknik Komputer dan Jaringan. Saya berfokus pada keandalan operasional infrastruktur TI melalui perakitan yang presisi, diagnosa perangkat keras yang akurat, serta manajemen perangkat lunak yang sistematis.
-            </p>
-            <p>
-              Nilai tambah utama saya terletak pada pemanfaatan sistem operasi deklaratif
-              <span class="highlight">NixOS</span> (menggunakan Nix Flakes & Home Manager). Dengan pendekatan ini, saya mampu mendesain konfigurasi sistem yang 100% reproduktif, meminimalkan potensi downtime, dan mempercepat pemulihan sistem dari kendala dalam hitungan menit saja.
-            </p>
-            <p>
-              Saya juga mengelola administrasi jaringan lokal (Home Lab) menggunakan
-              <span class="highlight">SSH</span> dan router <span class="highlight">OpenWrt</span>, mengamankan jalur lalu lintas data dengan VPN, menyinkronkan data cloud dengan <span class="highlight">rclone</span>, serta memanfaatkan dasar pemrograman Python dan integrasi <span class="highlight">AI Agents (MCP)</span> untuk mengotomatiskan alur kerja IT harian.
-            </p>
-          </div>
-
-          <div class="about-stats reveal">
-            <div class="stat-card">
-              <div class="stat-number">4+</div>
-              <div class="stat-label">Tahun Studi & Eksplorasi</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">15+</div>
-              <div class="stat-label">Sistem Dikelola</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">3+</div>
-              <div class="stat-label">OS Spesialisasi</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Konfigurasi Deklaratif</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Kompetensi Teknis</p>
-          <h2 class="section-title">Keahlian Utama</h2>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Category 1 -->
-          <div class="skills-category reveal">
-            <div class="skills-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Bahasa & Automasi</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Nix Expression Language (Flakes)</span>
-                  <span class="skill-level">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="85"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Shell Scripting (Fish/Bash)</span>
-                  <span class="skill-level">80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="80"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Python (Dasar)</span>
-                  <span class="skill-level">65%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="65"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">AI Prompting & Agents (MCP)</span>
-                  <span class="skill-level">60%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="60"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Basic Machine Learning</span>
-                  <span class="skill-level">50%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="50"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 2 -->
-          <div class="skills-category reveal">
-            <div class="skills-icon">
-              <i class="fas fa-network-wired"></i>
-            </div>
-            <h3>Sistem & Jaringan</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Troubleshooting Jaringan</span>
-                  <span class="skill-level">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="90"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">OpenWrt & VPN (WireGuard)</span>
-                  <span class="skill-level">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="85"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">DNS (NextDNS) & Cloudflare Security</span>
-                  <span class="skill-level">80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="80"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">SSH & Rclone Sync</span>
-                  <span class="skill-level">80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="80"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 3 -->
-          <div class="skills-category reveal">
-            <div class="skills-icon">
-              <i class="fas fa-tools"></i>
-            </div>
-            <h3>Hardware & Operasional</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Rakit PC & Diagnosa Hardware</span>
-                  <span class="skill-level">95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="95"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Administrasi OS (Windows/Linux)</span>
-                  <span class="skill-level">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="90"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Data Entry & Dokumen Digital</span>
-                  <span class="skill-level">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-level="85"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section
-      class="section"
-      id="projects"
-      style="background: var(--bg-secondary)"
-    >
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Karya Unggulan</p>
-          <h2 class="section-title">Portofolio Proyek</h2>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card reveal">
-            <div class="project-media">
-              <i class="fas fa-snowflake project-visual-icon"></i>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="project-tag">NixOS</span>
-                <span class="project-tag">Nix Flakes</span>
-                <span class="project-tag">Home Manager</span>
-                <span class="project-tag">SOPS-Nix</span>
-              </div>
-              <h3 class="project-title">Modular NixOS & Desktop Configurations</h3>
-              <p class="project-desc">
-                Arsitektur sistem operasi deklaratif berbasis NixOS Flakes dan Home Manager dengan desktop environment aesthetic (Hyprland & Niri). Menyertakan enkripsi rahasia dengan SOPS-Nix dan ephemeral root system (Btrfs Impermanence) untuk keamanan tinggi.
-              </p>
-              <a
-                href="https://github.com/XiaoXioe/nixos-config"
-                target="_blank"
-                rel="noopener"
-                class="project-link"
-                id="project-1-link"
-              >
-                Selengkapnya <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card reveal">
-            <div class="project-media">
-              <i class="fas fa-robot project-visual-icon"></i>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="project-tag">MCP</span>
-                <span class="project-tag">Python</span>
-                <span class="project-tag">AI Agents</span>
-                <span class="project-tag">Automation</span>
-              </div>
-              <h3 class="project-title">AI-Assisted Operations & MCP Servers</h3>
-              <p class="project-desc">
-                Pengembangan server Model Context Protocol (MCP) native-Nix untuk mengintegrasikan asisten AI dengan sistem lokal. Berguna untuk mengotomatiskan pengelolaan profil CLI multi-akun dan mempercepat alur kerja dukungan IT operasional.
-              </p>
-              <a
-                href="https://github.com/XiaoXioe/nix-mcp"
-                target="_blank"
-                rel="noopener"
-                class="project-link"
-                id="project-2-link"
-              >
-                Selengkapnya <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card reveal">
-            <div class="project-media">
-              <i class="fas fa-server project-visual-icon"></i>
-            </div>
-            <div class="project-body">
-              <div class="project-tags">
-                <span class="project-tag">SSH</span>
-                <span class="project-tag">OpenWrt</span>
-                <span class="project-tag">Cloudflare</span>
-                <span class="project-tag">VLESS</span>
-              </div>
-              <h3 class="project-title">Home Lab Network & Tunneling Setup</h3>
-              <p class="project-desc">
-                Administrasi jaringan Home Lab menggunakan protokol SSH untuk kontrol jarak jauh dan optimasi router OpenWrt. Mengintegrasikan rclone untuk sinkronisasi cloud, serta proxy tunneling aman berbasis Cloudflare Workers dan VLESS protocol.
-              </p>
-              <a
-                href="https://github.com/XiaoXioe/EDtunnel"
-                target="_blank"
-                rel="noopener"
-                class="project-link"
-                id="project-3-link"
-              >
-                Selengkapnya <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Mari Terhubung</p>
-          <h2 class="section-title">Hubungi Saya</h2>
-        </div>
-
-        <div class="contact-container reveal">
-          <h3 class="contact-title">
-            Tertarik Berkolaborasi untuk Solusi Infrastruktur TI?
-          </h3>
-          <p class="contact-desc">
-            Silakan hubungi saya melalui jalur profesional di bawah ini untuk kolaborasi proyek, administrasi sistem NixOS, manajemen jaringan lokal, atau otomatisasi dukungan TI.
+          <p>
+            Selain itu, saya mengintegrasikan alur kerja harian dengan <strong>Model Context Protocol (MCP)</strong> dan skrip Python untuk mempercepat penanganan tiket dukungan IT, otomasi sinkronisasi data cloud, dan pemeliharaan server jarak jauh.
           </p>
+        </div>
 
-          <div class="contact-methods">
-            <a
-              href="mailto:akbarnasuha3@gmail.com"
-              class="contact-btn primary"
-              id="contact-email"
-            >
-              <i class="fas fa-envelope"></i> Kirim Email
-            </a>
-            <a
-              href="https://github.com/XiaoXioe"
-              target="_blank"
-              rel="noopener"
-              class="contact-btn github"
-              id="contact-github"
-            >
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a
-              href="https://wa.me/6289510801630?text=Halo%20Akbar%20Nasuha,%20saya%20tertarik%20dengan%20profil%20IT%20Support%20%26%20NixOS%20Anda%20dan%20ingin%20berdiskusi%20lebih%20lanjut."
-              target="_blank"
-              rel="noopener"
-              class="contact-btn whatsapp"
-              id="contact-whatsapp"
-            >
-              <i class="fab fa-whatsapp"></i> WhatsApp
+        <div class="metrics-container reveal">
+          <div class="metric-card">
+            <div class="metric-number">100%</div>
+            <div class="metric-title">Konfigurasi Deklaratif</div>
+            <div class="metric-desc">Manajemen sistem terpusat via Nix Flakes & Home Manager.</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">8+</div>
+            <div class="metric-title">Repositori Publik</div>
+            <div class="metric-desc">Koleksi tools open-source di GitHub (Nix, Python, TypeScript).</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">3+</div>
+            <div class="metric-title">Spesialisasi OS</div>
+            <div class="metric-desc">Keahlian di NixOS, Linux (Arch/Debian), dan Windows Environment.</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">&lt; 5m</div>
+            <div class="metric-title">Disaster Recovery</div>
+            <div class="metric-desc">Waktu pemulihan konfigurasi sistem secara otomatis.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Capabilities Matrix -->
+  <section class="section" id="capabilities">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-tag">Kompetensi Teknis</div>
+        <h2 class="section-title">Matriks Kapabilitas Sistem</h2>
+        <p class="section-description">
+          Kemampuan teknis terstruktur yang mencakup sistem operasi deklaratif, otomatisasi kode, manajemen jaringan, hingga diagnosa perangkat keras.
+        </p>
+      </div>
+
+      <div class="matrix-grid">
+        <!-- Card 1: NixOS & Declarative Systems -->
+        <div class="matrix-card reveal">
+          <div class="matrix-header">
+            <div class="matrix-icon"><i class="fas fa-snowflake"></i></div>
+            <h3 class="matrix-title">Sistem Deklaratif (NixOS)</h3>
+          </div>
+          <p class="matrix-desc">
+            Perancangan arsitektur OS deklaratif, manajemen dotfiles modular dengan Home Manager, enkripsi rahasia dengan SOPS-Nix, dan root file system ephemeral (Btrfs Impermanence).
+          </p>
+          <div class="tech-chips">
+            <span class="tech-chip">Nix Flakes</span>
+            <span class="tech-chip">Home Manager</span>
+            <span class="tech-chip">SOPS-Nix</span>
+            <span class="tech-chip">Btrfs Impermanence</span>
+            <span class="tech-chip">Hyprland / Niri</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Automation & Python -->
+        <div class="matrix-card reveal">
+          <div class="matrix-header">
+            <div class="matrix-icon"><i class="fab fa-python"></i></div>
+            <h3 class="matrix-title">Automasi & Pemrograman</h3>
+          </div>
+          <p class="matrix-desc">
+            Pembuatan skrip otomasi Python (AsyncIO, Scrapling, Fallback Strategy Patterns), shell scripting (Fish & Bash), serta integrasi bot notifikasi Telegram.
+          </p>
+          <div class="tech-chips">
+            <span class="tech-chip">Python 3</span>
+            <span class="tech-chip">AsyncIO / HTTPX</span>
+            <span class="tech-chip">Fish / Bash Script</span>
+            <span class="tech-chip">Scrapling / BeautifulSoup</span>
+            <span class="tech-chip">Telegram Bot API</span>
+          </div>
+        </div>
+
+        <!-- Card 3: AI Agents & MCP -->
+        <div class="matrix-card reveal">
+          <div class="matrix-header">
+            <div class="matrix-icon"><i class="fas fa-microchip"></i></div>
+            <h3 class="matrix-title">AI Tooling & MCP Integration</h3>
+          </div>
+          <p class="matrix-desc">
+            Pengembangan server Model Context Protocol (MCP) untuk menghubungkan agen AI dengan toolchain lokal, serta pembuatan profile manager multi-akun untuk asisten coding AI.
+          </p>
+          <div class="tech-chips">
+            <span class="tech-chip">MCP Protocol</span>
+            <span class="tech-chip">FastMCP</span>
+            <span class="tech-chip">CLI Profile Manager</span>
+            <span class="tech-chip">Agent Orchestration</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Networking & Security -->
+        <div class="matrix-card reveal">
+          <div class="matrix-header">
+            <div class="matrix-icon"><i class="fas fa-network-wired"></i></div>
+            <h3 class="matrix-title">Jaringan & Cloud Security</h3>
+          </div>
+          <p class="matrix-desc">
+            Administrasi router OpenWrt, konfigurasi tunneling VPN WireGuard, proteksi DNS dengan NextDNS & Cloudflare DNS, serta sinkronisasi data terenkripsi via rclone.
+          </p>
+          <div class="tech-chips">
+            <span class="tech-chip">OpenWrt</span>
+            <span class="tech-chip">WireGuard VPN</span>
+            <span class="tech-chip">Cloudflare Workers</span>
+            <span class="tech-chip">NextDNS</span>
+            <span class="tech-chip">Rclone Sync</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Hardware & PC Diagnostics -->
+        <div class="matrix-card reveal">
+          <div class="matrix-header">
+            <div class="matrix-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+            <h3 class="matrix-title">Diagnosa Hardware & PC</h3>
+          </div>
+          <p class="matrix-desc">
+            Perakitan PC spesifikasi tinggi, isolasi dan troubleshooting masalah komponen (RAM, Motherboard, GPU, PSU), flashing BIOS/UEFI, serta thermal management.
+          </p>
+          <div class="tech-chips">
+            <span class="tech-chip">Perakitan PC</span>
+            <span class="tech-chip">Hardware Diagnostics</span>
+            <span class="tech-chip">BIOS / UEFI Setup</span>
+            <span class="tech-chip">Thermal & Stress Testing</span>
+          </div>
+        </div>
+
+        <!-- Card 6: IT Support & Ops -->
+        <div class="matrix-card reveal">
+          <div class="matrix-header">
+            <div class="matrix-icon"><i class="fas fa-headset"></i></div>
+            <h3 class="matrix-title">IT Support & Operasional</h3>
+          </div>
+          <p class="matrix-desc">
+            Manajemen tiket kendala pengguna, instalasi dan pemeliharaan multi-OS (Windows/Linux), manajemen printer/periferal kantor, serta dokumentasi standar operasional.
+          </p>
+          <div class="tech-chips">
+            <span class="tech-chip">Windows Administration</span>
+            <span class="tech-chip">Linux Operations</span>
+            <span class="tech-chip">Remote Troubleshooting</span>
+            <span class="tech-chip">SOP & Dokumentasi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured GitHub Repositories -->
+  <section class="section section-alt" id="repositories">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-tag">Karya Open Source</div>
+        <h2 class="section-title">Showcase Repositori GitHub</h2>
+        <p class="section-description">
+          Repositori publik yang saya bangun dan pelihara di GitHub (<a href="https://github.com/XiaoXioe" target="_blank" rel="noopener" style="color: var(--accent-sky); text-decoration: underline;">@XiaoXioe</a>) yang mencerminkan kapabilitas teknis nyata.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">Semua Repositori</button>
+        <button class="filter-btn" data-filter="nixos">NixOS & Sistem</button>
+        <button class="filter-btn" data-filter="ai">AI & Developer Tools</button>
+        <button class="filter-btn" data-filter="network">Jaringan & Otomasi</button>
+      </div>
+
+      <!-- Repos Grid -->
+      <div class="repos-grid" id="repos-container">
+
+        <!-- Repo 1: nixos-config -->
+        <div class="repo-card reveal" data-category="nixos">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">nixos-config</h3>
+            </div>
+            <span class="repo-badge badge-nix">Nix Flake</span>
+          </div>
+          <p class="repo-desc">
+            Arsitektur konfigurasi sistem operasi deklaratif modular berbasis Nix Flakes & Home Manager dengan desktop environment Hyprland dan Niri.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Enkripsi rahasia aman terintegrasi dengan SOPS-Nix</li>
+            <li><i class="fas fa-check"></i> Root ephemeral filesystem menggunakan Btrfs Impermanence</li>
+            <li><i class="fas fa-check"></i> Reproduktifitas 100% di berbagai konfigurasi mesin</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">nixos</span>
+            <span class="repo-topic">nix-flakes</span>
+            <span class="repo-topic">home-manager</span>
+            <span class="repo-topic">sops-nix</span>
+            <span class="repo-topic">impermanence</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-nix"></span>
+              <span>Nix</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/nixos-config" target="_blank" rel="noopener" class="repo-link" id="repo-link-nixos-config">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
             </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-text">
-          &copy; <span id="current-year"></span> Akbar Nasuha. All rights
-          reserved.
+        <!-- Repo 2: nix-mcp -->
+        <div class="repo-card reveal" data-category="ai">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">nix-mcp</h3>
+            </div>
+            <span class="repo-badge badge-nix">MCP Server</span>
+          </div>
+          <p class="repo-desc">
+            Nix-native Model Context Protocol (MCP) servers yang memungkinkan asisten AI berinteraksi langsung dengan resource dan toolchain NixOS lokal secara terisolasi dan aman.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Protokol MCP standar untuk integrasi LLM dan Agent</li>
+            <li><i class="fas fa-check"></i> Query status flake, rebuild logs, dan diagnostik otomatis</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">mcp</span>
+            <span class="repo-topic">nixos</span>
+            <span class="repo-topic">ai-agents</span>
+            <span class="repo-topic">automation</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-nix"></span>
+              <span>Nix / Python</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/nix-mcp" target="_blank" rel="noopener" class="repo-link" id="repo-link-nix-mcp">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
-        <ul class="footer-links">
-          <li>
-            <a
-              href="https://github.com/XiaoXioe"
-              target="_blank"
-              rel="noopener"
-              class="footer-link"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://wa.me/6289510801630"
-              target="_blank"
-              rel="noopener"
-              class="footer-link"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
 
-    <!-- Script JS -->
-    <script src="script.js"></script>
-  </body>
+        <!-- Repo 3: nix-custompkgs -->
+        <div class="repo-card reveal" data-category="nixos">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">nix-custompkgs</h3>
+            </div>
+            <span class="repo-badge badge-nix">Derivations</span>
+          </div>
+          <p class="repo-desc">
+            Koleksi custom Nix flakes dan package derivations mandiri, termasuk integrasi bot trading Freqtrade standalone yang terisolasi untuk NixOS.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Standalone packaging Freqtrade dengan dependensi Cython/Python</li>
+            <li><i class="fas fa-check"></i> Custom overlays dan reusable flake inputs</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">nix-pkgs</span>
+            <span class="repo-topic">freqtrade</span>
+            <span class="repo-topic">packaging</span>
+            <span class="repo-topic">flake</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-nix"></span>
+              <span>Nix</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/nix-custompkgs" target="_blank" rel="noopener" class="repo-link" id="repo-link-nix-custompkgs">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Repo 4: DaoStream -->
+        <div class="repo-card reveal" data-category="ai">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">DaoStream</h3>
+            </div>
+            <span class="repo-badge badge-python">CLI Tool</span>
+          </div>
+          <p class="repo-desc">
+            Aplikasi CLI scraper dan stream resolver modular berkecepatan tinggi yang dirancang untuk langsung memutar media video di dalam terminal menggunakan player MPV.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Integrasi Scrapling modern untuk parsing cepat & anti-block</li>
+            <li><i class="fas fa-check"></i> Pipe resolusi langsung ke MPV player dengan buffering optimal</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">python</span>
+            <span class="repo-topic">cli</span>
+            <span class="repo-topic">scrapling</span>
+            <span class="repo-topic">mpv</span>
+            <span class="repo-topic">media-streamer</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-python"></span>
+              <span>Python</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/DaoStream" target="_blank" rel="noopener" class="repo-link" id="repo-link-daostream">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Repo 5: vimms-lair-downloader -->
+        <div class="repo-card reveal" data-category="network">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">vimms-lair-downloader</h3>
+            </div>
+            <span class="repo-badge badge-python">CLI Downloader</span>
+          </div>
+          <p class="repo-desc">
+            CLI downloader untuk vault media klasik yang mendukung 36 sistem dengan arsitektur Strategy Pattern fallback download engine (aria2c, wget, httpx).
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Fallback otomatis antara engine download aria2c, wget, & httpx</li>
+            <li><i class="fas fa-check"></i> Tersedia sebagai native package di ekosistem Nix Flakes</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">python</span>
+            <span class="repo-topic">aria2c</span>
+            <span class="repo-topic">strategy-pattern</span>
+            <span class="repo-topic">nix-package</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-python"></span>
+              <span>Python</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/vimms-lair-downloader" target="_blank" rel="noopener" class="repo-link" id="repo-link-vimms-downloader">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Repo 6: antigravity-cli-multi-account -->
+        <div class="repo-card reveal" data-category="ai">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">antigravity-cli-multi-account</h3>
+            </div>
+            <span class="repo-badge badge-python">Developer Tool</span>
+          </div>
+          <p class="repo-desc">
+            Manajer profil multi-akun untuk Antigravity CLI & IDE guna memudahkan pengelolaan kredensial, token autentikasi, dan workspace terisolasi untuk pengembangan AI.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Manajemen sesi akun AI yang aman dan cepat</li>
+            <li><i class="fas fa-check"></i> Isolasi konfigurasi per-project tanpa bentrok token</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">python</span>
+            <span class="repo-topic">cli-manager</span>
+            <span class="repo-topic">antigravity</span>
+            <span class="repo-topic">productivity</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-python"></span>
+              <span>Python</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/antigravity-cli-multi-account" target="_blank" rel="noopener" class="repo-link" id="repo-link-antigravity-cli">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Repo 7: EDtunnel -->
+        <div class="repo-card reveal" data-category="network">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">EDtunnel</h3>
+            </div>
+            <span class="repo-badge badge-ts">Cloudflare Worker</span>
+          </div>
+          <p class="repo-desc">
+            Implementasi protokol routing VLESS serverless memanfaatkan infrastruktur Cloudflare Pages dan Workers untuk koneksi aman terenkripsi.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Edge computing serverless routing tanpa kebutuhan server fisik</li>
+            <li><i class="fas fa-check"></i> Integrasi TLS encryption dan CDN acceleration</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">cloudflare</span>
+            <span class="repo-topic">serverless</span>
+            <span class="repo-topic">vless</span>
+            <span class="repo-topic">edge-network</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-javascript"></span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/EDtunnel" target="_blank" rel="noopener" class="repo-link" id="repo-link-edtunnel">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Repo 8: loker-scraper -->
+        <div class="repo-card reveal" data-category="network">
+          <div class="repo-header">
+            <div class="repo-title-wrapper">
+              <i class="fas fa-folder-open repo-icon"></i>
+              <h3 class="repo-name">loker-scraper</h3>
+            </div>
+            <span class="repo-badge badge-python">Automation</span>
+          </div>
+          <p class="repo-desc">
+            Aplikasi scraper otomatis untuk memantau portal lowongan kerja lokal dan mengirimkan notifikasi instan langsung ke channel Telegram.
+          </p>
+          <ul class="repo-highlights">
+            <li><i class="fas fa-check"></i> Pemantauan berkala dan deduplikasi data otomatis</li>
+            <li><i class="fas fa-check"></i> Pengiriman pesan terformat dengan Telegram Bot API</li>
+          </ul>
+          <div class="repo-topics">
+            <span class="repo-topic">python</span>
+            <span class="repo-topic">web-scraping</span>
+            <span class="repo-topic">telegram-bot</span>
+            <span class="repo-topic">automation</span>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-lang">
+              <span class="lang-dot lang-python"></span>
+              <span>Python</span>
+            </div>
+            <a href="https://github.com/XiaoXioe/loker-scraper" target="_blank" rel="noopener" class="repo-link" id="repo-link-loker-scraper">
+              Lihat di GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture & System Workflow -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-tag">Sistem & Alur Kerja</div>
+        <h2 class="section-title">Arsitektur Infrastruktur Terintegrasi</h2>
+        <p class="section-description">
+          Bagaimana komponen deklaratif, keamanan rahasia, jaringan lokal, dan asisten AI bekerja bersama secara berkesinambungan.
+        </p>
+      </div>
+
+      <div class="arch-container reveal">
+        <div class="arch-steps">
+          <div class="arch-step">
+            <span class="arch-step-num">01 · SOURCE</span>
+            <h4 class="arch-step-title">Git & Nix Flakes</h4>
+            <p class="arch-step-desc">
+              Seluruh konfigurasi sistem didefinisikan secara deklaratif di repository Git dengan lockfile presisi.
+            </p>
+          </div>
+
+          <div class="arch-step">
+            <span class="arch-step-num">02 · SECURITY</span>
+            <h4 class="arch-step-title">SOPS & Impermanence</h4>
+            <p class="arch-step-desc">
+              Kunci enkripsi didekripsi aman saat boot sementara partisi root dibersihkan setiap kali reboot.
+            </p>
+          </div>
+
+          <div class="arch-step">
+            <span class="arch-step-num">03 · NETWORK</span>
+            <h4 class="arch-step-title">OpenWrt & Cloudflare</h4>
+            <p class="arch-step-desc">
+              Jalur komunikasi lokal diamankan dengan WireGuard VPN, NextDNS filtering, dan Cloudflare CDN.
+            </p>
+          </div>
+
+          <div class="arch-step">
+            <span class="arch-step-num">04 · OPS & AI</span>
+            <h4 class="arch-step-title">MCP & Python Agents</h4>
+            <p class="arch-step-desc">
+              Otomatisasi pemeliharaan, sinkronisasi data cloud, dan pemecahan kendala dibantu AI Agent lokal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="section-tag" style="justify-content: center;">Mari Terhubung</div>
+        <h2 class="contact-title">Siap Berkolaborasi untuk Solusi Infrastruktur TI?</h2>
+        <p class="contact-description">
+          Saya terbuka untuk peluang kerja sebagai <strong>Junior IT Support</strong>, administrasi sistem Linux/NixOS, manajemen jaringan lokal, maupun pembuatan otomatisasi skrip khusus.
+        </p>
+
+        <div class="contact-buttons">
+          <a href="mailto:akbarnasuha3@gmail.com" class="contact-item-btn primary" id="contact-email">
+            <i class="fas fa-envelope"></i> Kirim Email
+          </a>
+          <a href="https://github.com/XiaoXioe" target="_blank" rel="noopener" class="contact-item-btn" id="contact-github">
+            <i class="fab fa-github"></i> GitHub @XiaoXioe
+          </a>
+          <a href="https://wa.me/6289510801630?text=Halo%20Akbar%20Nasuha,%20saya%20tertarik%20dengan%20profil%20IT%20Support%20%26%20NixOS%20Anda%20dan%20ingin%20berdiskusi%20lebih%20lanjut." target="_blank" rel="noopener" class="contact-item-btn whatsapp" id="contact-whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="cv.html" target="_blank" class="contact-item-btn" id="contact-cv">
+            <i class="fas fa-file-pdf"></i> Lihat Dokumen CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <div class="footer-brand">akbar.nasuha ~ <span style="color: var(--accent-sky); font-weight: normal;">portfolio</span></div>
+        <div class="footer-copy">
+          &copy; <span id="current-year"></span> Akbar Nasuha. Hosted on GitHub Pages & Protected by Cloudflare.
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/XiaoXioe" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub" id="footer-github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/6289510801630" target="_blank" rel="noopener" class="footer-link" aria-label="WhatsApp" id="footer-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:akbarnasuha3@gmail.com" class="footer-link" aria-label="Email" id="footer-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
 </html>
